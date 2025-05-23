@@ -79,11 +79,10 @@ WSGI_APPLICATION = 'Nss.wsgi.application'
 
 DATABASES = {
     'default': {
-          'ENGINE': 'django.db.backends.mysql',  # Use MySQL
-        'NAME': 'nss',               # Your database name
-        'USER': 'root',               # Your database user
-        'PASSWORD': '889378@Afila',       # Your database password
-        'HOST': 'localhost',                  # Database host
+        'NAME': 'sql12780815',               # Your database name
+        'USER': ' sql12780815',               # Your database user
+        'PASSWORD': 'bp4vxGIh9z',       # Your database password
+        'HOST': 'sql12.freesqldatabase.com',  # Replace this with the actual host
         'PORT': '3306', 
     }
 }
