@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+import dj_database_url
 
 import os
 from pathlib import Path
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-2b_@c(yj@pv^q2-@s4c+t_^bj)^450k&uzzcbq2^udb$vot^#s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['your-service-name.onrender.com']
+ALLOWED_HOSTS = ['camp-nss-1.onrender.com']
 
 
 # Application definition
