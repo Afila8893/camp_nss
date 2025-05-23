@@ -79,6 +79,7 @@ WSGI_APPLICATION = 'Nss.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.mysql',  # ✅ Required line
         'NAME': 'sql12780815',               # Your database name
         'USER': ' sql12780815',               # Your database user
         'PASSWORD': 'bp4vxGIh9z',       # Your database password
