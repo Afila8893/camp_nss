@@ -1,0 +1,14 @@
+# render.yaml
+services:
+  - type: web
+    name: my-django-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn Nss.wsgi:application --bind 0.0.0.0:$PORT
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: Nss.settings
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
