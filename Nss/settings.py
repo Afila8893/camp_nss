@@ -80,10 +80,16 @@ WSGI_APPLICATION = 'Nss.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL')
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'if0_39067209',  # Your database name
+        'USER': 'if0_39067209_XXX',  # Your MySQL username
+        'PASSWORD': 'kToQCj8IP0I',  # Your MySQL password
+        'HOST': 'sql302.infinityfree.com',  # Or the host provided by InfinityFree (check cPanel)
+        'PORT': '3306',  # Default MySQL port
+    }
 }
+
 
 
 # Password validation
